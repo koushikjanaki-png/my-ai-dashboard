@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="font-family:Arial;background:#111;color:white;text-align:center;">
+
+<h2>AI Dashboard Login</h2>
+
+<input id="u" placeholder="Username"><br><br>
+<input id="p" type="password" placeholder="Password"><br><br>
+<button onclick="go()">Login</button>
+
+<p id="e" style="color:red;"></p>
+<p>Demo login: <b>admin / 1234</b></p>
+
+<script>
+function go(){
+  if(u.value==="admin" && p.value==="1234"){
+    location.href="dashboard.html";
+  } else {
+    e.innerText="Wrong username or password";
+  }
+}
+</script>
+
+</body>
+</html>
